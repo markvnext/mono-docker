@@ -5,7 +5,7 @@ MAINTAINER Mark Rendle <github.com/markrendle>
 #based on dockerfile by Michael Friis
 
 RUN apt-get update \
-	&& apt-get install -y curl \
+	&& apt-get install -y apt-utils curl \
 	&& apt-clean \
 	&& rm -rf /var/lib/apt/lists/* /var/lib/dpkg/lists/*
 
